@@ -2,6 +2,8 @@ import requests
 import yaml
 import os
 from WeChatBot import WeChatBot
+import datetime
+NOW = datetime.datetime.now()
 
 
 # 发送微信应用消息
@@ -36,8 +38,12 @@ from WeChatBot import WeChatBot
 def main():
    corpid = 'wwf210418e935eb1d1'
    corpsecret = '-wCwLjdsNM-Gwao6l4m-7jta2_Ecerq-5N76E8IBJ3o'
+   agentid = 1000002
+
    bot = WeChatBot(corpid, corpsecret)
-   
+   title = f"今天是{NOW.strftime('%Y-%m-%d')}"
+   description = f"测试消息\n<b>测试html</b>"
+   bot.send_massage(agentid=agentid, title=title, description=description)
    pass
 
 

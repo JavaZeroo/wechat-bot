@@ -29,7 +29,7 @@ def main():
       'https':'socks5://110.40.190.64:2016'
    }
    weather = get_weather(api='qweather', data={'location': LOCATION, 'key':KEY})
-   print(weather)
+   life = get_life(data={'location': LOCATION, 'key':KEY})
    bot.set_proxies(proxies)
    bot.send_massage(title=title, description=weather)
 

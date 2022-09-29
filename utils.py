@@ -4,9 +4,11 @@ from pathlib import Path
 import requests
 import datetime
 from easydict import EasyDict as edict
+import json
 NOW = datetime.datetime.now()
 CACHE_DIR = Path('cache')
-
+LOCATION = '101280105'
+KEY = 'e67b0a19d4d14bb4a525ed5cd686c020'
 
 def write_cache_file(filename, content):
     """
@@ -14,7 +16,11 @@ def write_cache_file(filename, content):
     """
     path = CACHE_DIR / filename
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(str(content), encoding="utf-8")
+    if str(filename).endswith('.json'):
+        with open(path, 'w') as f:
+            json.dump(content, f)
+    else:
+        path.write_text(str(content), encoding="utf-8")
     return path
 
 
@@ -24,6 +30,9 @@ def read_cache_file(filename):
     """
     path = CACHE_DIR / filename
     if path.exists():
+        if str(filename).endswith('.json'):
+            with open(path, 'r') as f:
+                return json.load(f)
         return path.read_text(encoding="utf-8")
     else:
         return None
@@ -49,8 +58,27 @@ def get_weather(api='vvhan', data=None, cache_path=Path('weather.json')):
         write_cache_file(cache_path, weather)
     else:
         logging.debug("Found weather cache.")
-
     return weather
+
+
+def get_life(data=None, cache_path=Path('life.json')):
+    """
+    data需要为一个字典
+    """
+    assert data is None or isinstance(data, (dict, edict))
+    if data is not None and isinstance(data, dict):
+        data = edict(data)
+    life = read_cache_file(cache_path)
+    try:
+        life = edict(life)
+        cache_time = datetime.datetime.strptime(life.updateTime, "%Y-%m-%dT%H:%M+08:00")
+        if cache_time.date() != NOW.date():
+            raise Exception("")
+    except:
+        life = edict(requests.get(f'https://devapi.qweather.com/v7/indices/1d?type=0&location={data.location}&key={data.key}').json())
+        write_cache_file(cache_path, life)
+    return life
+
 
 # 未完成
 def get_holiday():
@@ -69,4 +97,4 @@ def get_trainTicket(depart, dest, time=NOW):
     trainTicket = edict(requests.get(url).json())
 
 if __name__=="__main__":
-    print(read_cache_file("test1"))
+    (get_life(data={'location': LOCATION, 'key':KEY}))

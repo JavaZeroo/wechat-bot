@@ -35,3 +35,69 @@ DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): ip-api.com:80
 DEBUG:urllib3.connectionpool:http://ip-api.com:80 "GET /json HTTP/1.1" 200 366
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
 DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "POST /cgi-bin/message/send?access_token=Jjh6JHjvUYQVfV_oTzceiYlP_s5EYDshF__tjtVD1dlSsmmpmF6GNZVYF2nm8ONLAKuPRAcrxD4Lq383fige1E6LeXbrFlnEPKkU0RI7OwBgugadwZfREXtgjbLb0estAtdRecJ5UPYPp0X9JfGij4ilYpUF1OjkSg8wdqIFbhrEbjRtYYxe2yJRKaF7xpeRMh-u3-sMx2a5QFTvAPe-pg HTTP/1.1" 200 124
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "GET /cgi-bin/gettoken?corpid=wwf210418e935eb1d1&corpsecret=-wCwLjdsNM-Gwao6l4m-7jta2_Ecerq-5N76E8IBJ3o HTTP/1.1" 200 277
+DEBUG:root:Found weather cache.
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): ip-api.com:80
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "POST /cgi-bin/message/send?access_token=Jjh6JHjvUYQVfV_oTzceiYlP_s5EYDshF__tjtVD1dlSsmmpmF6GNZVYF2nm8ONLAKuPRAcrxD4Lq383fige1E6LeXbrFlnEPKkU0RI7OwBgugadwZfREXtgjbLb0estAtdRecJ5UPYPp0X9JfGij4ilYpUF1OjkSg8wdqIFbhrEbjRtYYxe2yJRKaF7xpeRMh-u3-sMx2a5QFTvAPe-pg HTTP/1.1" 200 124
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "GET /cgi-bin/gettoken?corpid=wwf210418e935eb1d1&corpsecret=-wCwLjdsNM-Gwao6l4m-7jta2_Ecerq-5N76E8IBJ3o HTTP/1.1" 200 277
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "GET /cgi-bin/gettoken?corpid=wwf210418e935eb1d1&corpsecret=-wCwLjdsNM-Gwao6l4m-7jta2_Ecerq-5N76E8IBJ3o HTTP/1.1" 200 277
+DEBUG:root:Found weather cache.
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): ip-api.com:80
+DEBUG:urllib3.connectionpool:http://ip-api.com:80 "GET /json HTTP/1.1" 302 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): dnspod.qcloud.com:443
+DEBUG:urllib3.connectionpool:https://dnspod.qcloud.com:443 "GET /static/webblock.html?d=ip-api.com HTTP/1.1" 200 2335
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "POST /cgi-bin/message/send?access_token=Jjh6JHjvUYQVfV_oTzceiYlP_s5EYDshF__tjtVD1dlSsmmpmF6GNZVYF2nm8ONLAKuPRAcrxD4Lq383fige1E6LeXbrFlnEPKkU0RI7OwBgugadwZfREXtgjbLb0estAtdRecJ5UPYPp0X9JfGij4ilYpUF1OjkSg8wdqIFbhrEbjRtYYxe2yJRKaF7xpeRMh-u3-sMx2a5QFTvAPe-pg HTTP/1.1" 200 124
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "GET /cgi-bin/gettoken?corpid=wwf210418e935eb1d1&corpsecret=-wCwLjdsNM-Gwao6l4m-7jta2_Ecerq-5N76E8IBJ3o HTTP/1.1" 200 277
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "GET /cgi-bin/gettoken?corpid=wwf210418e935eb1d1&corpsecret=-wCwLjdsNM-Gwao6l4m-7jta2_Ecerq-5N76E8IBJ3o HTTP/1.1" 200 277
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "GET /cgi-bin/gettoken?corpid=wwf210418e935eb1d1&corpsecret=-wCwLjdsNM-Gwao6l4m-7jta2_Ecerq-5N76E8IBJ3o HTTP/1.1" 200 277
+DEBUG:root:Found weather cache.
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): ip-api.com:80
+DEBUG:urllib3.connectionpool:http://ip-api.com:80 "GET /json HTTP/1.1" 200 366
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "POST /cgi-bin/message/send?access_token=Jjh6JHjvUYQVfV_oTzceiYlP_s5EYDshF__tjtVD1dlSsmmpmF6GNZVYF2nm8ONLAKuPRAcrxD4Lq383fige1E6LeXbrFlnEPKkU0RI7OwBgugadwZfREXtgjbLb0estAtdRecJ5UPYPp0X9JfGij4ilYpUF1OjkSg8wdqIFbhrEbjRtYYxe2yJRKaF7xpeRMh-u3-sMx2a5QFTvAPe-pg HTTP/1.1" 200 124
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "GET /cgi-bin/gettoken?corpid=wwf210418e935eb1d1&corpsecret=-wCwLjdsNM-Gwao6l4m-7jta2_Ecerq-5N76E8IBJ3o HTTP/1.1" 200 277
+DEBUG:root:Found weather cache.
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): ip-api.com:80
+DEBUG:urllib3.connectionpool:http://ip-api.com:80 "GET /json HTTP/1.1" 200 366
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "POST /cgi-bin/message/send?access_token=Jjh6JHjvUYQVfV_oTzceiYlP_s5EYDshF__tjtVD1dlSsmmpmF6GNZVYF2nm8ONLAKuPRAcrxD4Lq383fige1E6LeXbrFlnEPKkU0RI7OwBgugadwZfREXtgjbLb0estAtdRecJ5UPYPp0X9JfGij4ilYpUF1OjkSg8wdqIFbhrEbjRtYYxe2yJRKaF7xpeRMh-u3-sMx2a5QFTvAPe-pg HTTP/1.1" 200 124
+DEBUG:root:Found weather cache.
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): ip-api.com:80
+DEBUG:urllib3.connectionpool:http://ip-api.com:80 "GET /json HTTP/1.1" 200 366
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "POST /cgi-bin/message/send?access_token=Jjh6JHjvUYQVfV_oTzceiYlP_s5EYDshF__tjtVD1dlSsmmpmF6GNZVYF2nm8ONLAKuPRAcrxD4Lq383fige1E6LeXbrFlnEPKkU0RI7OwBgugadwZfREXtgjbLb0estAtdRecJ5UPYPp0X9JfGij4ilYpUF1OjkSg8wdqIFbhrEbjRtYYxe2yJRKaF7xpeRMh-u3-sMx2a5QFTvAPe-pg HTTP/1.1" 200 124
+DEBUG:root:Found weather cache.
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): ip-api.com:80
+DEBUG:urllib3.connectionpool:http://ip-api.com:80 "GET /json HTTP/1.1" 200 366
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "POST /cgi-bin/message/send?access_token=Jjh6JHjvUYQVfV_oTzceiYlP_s5EYDshF__tjtVD1dlSsmmpmF6GNZVYF2nm8ONLAKuPRAcrxD4Lq383fige1E6LeXbrFlnEPKkU0RI7OwBgugadwZfREXtgjbLb0estAtdRecJ5UPYPp0X9JfGij4ilYpUF1OjkSg8wdqIFbhrEbjRtYYxe2yJRKaF7xpeRMh-u3-sMx2a5QFTvAPe-pg HTTP/1.1" 200 124
+DEBUG:root:Found weather cache.
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): ip-api.com:80
+DEBUG:urllib3.connectionpool:http://ip-api.com:80 "GET /json HTTP/1.1" 200 366
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "POST /cgi-bin/message/send?access_token=Jjh6JHjvUYQVfV_oTzceiYlP_s5EYDshF__tjtVD1dlSsmmpmF6GNZVYF2nm8ONLAKuPRAcrxD4Lq383fige1E6LeXbrFlnEPKkU0RI7OwBgugadwZfREXtgjbLb0estAtdRecJ5UPYPp0X9JfGij4ilYpUF1OjkSg8wdqIFbhrEbjRtYYxe2yJRKaF7xpeRMh-u3-sMx2a5QFTvAPe-pg HTTP/1.1" 200 124
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): devapi.qweather.com:443
+DEBUG:urllib3.connectionpool:https://devapi.qweather.com:443 "GET /v7/indices/1d?type=0&location=101280105&key=e67b0a19d4d14bb4a525ed5cd686c020 HTTP/1.1" 200 1463
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): devapi.qweather.com:443
+DEBUG:urllib3.connectionpool:https://devapi.qweather.com:443 "GET /v7/indices/1d?type=0&location=101280105&key=e67b0a19d4d14bb4a525ed5cd686c020 HTTP/1.1" 200 1463
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): devapi.qweather.com:443
+DEBUG:urllib3.connectionpool:https://devapi.qweather.com:443 "GET /v7/indices/1d?type=0&location=101280105&key=e67b0a19d4d14bb4a525ed5cd686c020 HTTP/1.1" 200 1463
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): devapi.qweather.com:443
+DEBUG:urllib3.connectionpool:https://devapi.qweather.com:443 "GET /v7/indices/1d?type=0&location=101280105&key=e67b0a19d4d14bb4a525ed5cd686c020 HTTP/1.1" 200 1463
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): devapi.qweather.com:443
+DEBUG:urllib3.connectionpool:https://devapi.qweather.com:443 "GET /v7/indices/1d?type=0&location=101280105&key=e67b0a19d4d14bb4a525ed5cd686c020 HTTP/1.1" 200 1463
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): devapi.qweather.com:443
+DEBUG:urllib3.connectionpool:https://devapi.qweather.com:443 "GET /v7/indices/1d?type=0&location=101280105&key=e67b0a19d4d14bb4a525ed5cd686c020 HTTP/1.1" 200 1463
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): devapi.qweather.com:443
+DEBUG:urllib3.connectionpool:https://devapi.qweather.com:443 "GET /v7/indices/1d?type=0&location=101280105&key=e67b0a19d4d14bb4a525ed5cd686c020 HTTP/1.1" 200 1463
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): devapi.qweather.com:443
+DEBUG:urllib3.connectionpool:https://devapi.qweather.com:443 "GET /v7/indices/1d?type=0&location=101280105&key=e67b0a19d4d14bb4a525ed5cd686c020 HTTP/1.1" 200 1463

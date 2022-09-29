@@ -65,21 +65,31 @@ class WeChatBot():
     def _checkconfig(self):
 
         if os.path.exists(config_dir):
-            with open(config_dir, 'r') as f:
-                data = yaml.load(f, Loader=yaml.Loader)
-                if self._is_expired(data):
-                    self.access_token = self._get_access_token()
-                else:
-                    self.access_token = data['access_token']['key']
-                    print(self.access_token)
-                    pass
+            try:
+                with open(config_dir, 'r') as f:
+                    data = yaml.load(f, Loader=yaml.Loader)
+                    if self._is_expired(data):
+                        self.access_token = self._get_access_token()
+                    else:
+                        self.access_token = data['access_token']['key']
+                        print(self.access_token)
+                        pass
+            except:
+                self.access_token = self._get_access_token()
         else:
             self.access_token = self._get_access_token()
         self._create_config()
 
 
     def _create_config(self):
-        data = {'access_token': {'key': self.access_token, 'expired_at': (NOW + datetime.timedelta(seconds=7200)).strftime("%Y-%m-%d %H:%M:%S")}}
+        if os.path.exists(config_dir):
+            with open(config_dir) as f:
+                data = yaml.load(f, Loader=yaml.Loader)
+                try:
+                    del data['access_token']
+                except:
+                    pass
+        data.update({'access_token': {'key': self.access_token, 'expired_at': (NOW + datetime.timedelta(seconds=7200)).strftime("%Y-%m-%d %H:%M:%S")}})
         with open(config_dir, 'w') as f:
             yaml.dump(data, f)
         pass
@@ -120,5 +130,3 @@ if __name__=="__main__":
     corpsecret = '-wCwLjdsNM-Gwao6l4m-7jta2_Ecerq-5N76E8IBJ3o'
 
     bot = WeChatBot(corpid, corpsecret)
-
-

@@ -1,0 +1,4 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): qyapi.weixin.qq.com:443
+DEBUG:urllib3.connectionpool:https://qyapi.weixin.qq.com:443 "GET /cgi-bin/gettoken?corpid=wwf210418e935eb1d1&corpsecret=-wCwLjdsNM-Gwao6l4m-7jta2_Ecerq-5N76E8IBJ3o HTTP/1.1" 200 277
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.vvhan.com:443
+DEBUG:urllib3.connectionpool:https://api.vvhan.com:443 "GET /api/weather?city=%E8%8A%B1%E9%83%BD HTTP/1.1" 200 None

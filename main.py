@@ -12,6 +12,7 @@ from WeChatBot import WeChatBot
 from easydict import EasyDict as edict
 import datetime
 import requests
+from utils import *
 NOW = datetime.datetime.now()
 LOCATION = '101280105'
 KEY = 'e67b0a19d4d14bb4a525ed5cd686c020'
@@ -30,13 +31,14 @@ def main():
    weather = get_weather(LOCATION, KEY)
    print(weather)
    bot.set_proxies(proxies)
-   # bot.send_massage(title=title, description=weather)
+   bot.send_massage(title=title, description=weather)
    pass
 
 # 待处理返回值
 def get_weather(location, key):
    # weather = edict(requests.get(f'https://devapi.qweather.com/v7/weather/now?location={location}&key={key}').json())
    weather = edict(requests.get(f'https://api.vvhan.com/api/weather?city=花都').json()).info
+
    print(weather)
    type = weather.type
    high = weather.high

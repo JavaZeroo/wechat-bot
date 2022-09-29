@@ -28,40 +28,13 @@ def main():
       'http':'socks5://110.40.190.64:2016', 
       'https':'socks5://110.40.190.64:2016'
    }
-   weather = get_weather(LOCATION, KEY)
+   weather = get_weather(api='qweather', data={'location': LOCATION, 'key':KEY})
    print(weather)
    bot.set_proxies(proxies)
    bot.send_massage(title=title, description=weather)
+
    pass
 
-# 待处理返回值
-def get_weather(location, key):
-   # weather = edict(requests.get(f'https://devapi.qweather.com/v7/weather/now?location={location}&key={key}').json())
-   weather = edict(requests.get(f'https://api.vvhan.com/api/weather?city=花都').json()).info
-
-   print(weather)
-   type = weather.type
-   high = weather.high
-   low = weather.low
-   tip = weather.tip
-   return f'今天{type} 最{high}最{low}\n{tip}'
-
-
-# 未完成
-def get_holiday():
-   try:
-      holiday = edict(requests.get(f'http://timor.tech/api/holiday/next/').json())
-      logging.debug('获取节日成功')
-   except:
-      logging.warning('获取节日失败！！')
-      return None
-   
-   return holiday
-
-# 待处理返回值
-def get_trainTicket(depart, dest, time=NOW):
-   url = f'http://huoche.tuniu.com/yii.php?r=train/trainTicket/getTickets&primary[departureDate]={time}&primary[departureCityName]={depart}&primary[arrivalCityName]={dest}'
-   trainTicket = edict(requests.get(url).json())
 
 if __name__=="__main__":
    main()
